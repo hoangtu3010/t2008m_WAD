@@ -10,6 +10,12 @@ namespace t2008m_WAD.Models
     {
         public SystemDbContext() : base("T2008M") { }
 
+
+        public DbSet<Brand> Brands { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
         public DbSet<Product> Products { get; set; }
+
     }
 }
